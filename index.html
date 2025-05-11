@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinettes | Afoula et Steve</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cntr">
+        <header class="entete">
+            <h1 class="titre">
+                <i class="fas fa-puzzle-piece"></i>
+                Jeu de Devinettes
+            </h1>
+            <p class="soustitre">Bienvenue Afoula et Steve !</p>
+        </header>
+
+        <main class="zone">
+            <section class="infos">
+                <p class="txt">
+                    <i class="fas fa-info-circle"></i>
+                    Devinez un nombre entre 1 et 100
+                </p>
+            </section>
+
+            <section class="jeu">
+                <div class="form">
+                    <input 
+                        type="number" 
+                        id="nb" 
+                        min="1" 
+                        max="100"
+                        class="champ"
+                        placeholder="Entrez un nombre entre 1 et 100"
+                        aria-label="Votre proposition"
+                    >
+                    <button id="val" class="btn btn-prim">
+                        <i class="fas fa-check"></i>
+                        Valider
+                    </button>
+                </div>
+
+                <div id="msg" class="msg"></div>
+                <div id="ind" class="indice"></div>
+            </section>
+
+            <section class="ctrl">
+                <button id="new" class="btn btn-sec">
+                    <i class="fas fa-redo"></i>
+                    Nouvelle partie
+                </button>
+            </section>
+
+            <section class="stats">
+                <div class="score">
+                    <p class="score-txt">
+                        <i class="fas fa-trophy"></i>
+                        Meilleur score : <span id="best" class="score-val">-</span>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pied">
+            <p>&copy; 2025 - Jeu de Devinettes</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
